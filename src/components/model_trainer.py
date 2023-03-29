@@ -35,15 +35,14 @@ class ModelTrainer:
                 test_array[:,:-1],
                 test_array[:,-1]
             )
-            models ={
-                "Random Forest" : RandomForestRegressor(),
-                "Decision Tree" :DecisionTreeRegressor(),
-                "Gradient boosting" : GradientBoostingRegressor(),
-                "Linear Regression" : LinearRegression(),
-                "K-Neighbors Classifier" : KNeighborsRegressor(),
-                "XGBClassifier" : XGBRegressor(),
-                "CatBoosting Classifier" : CatBoostRegressor(verbose =False),
-                "AdaBoost Classifier" : AdaBoostRegressor()
+            models = {
+                "Random Forest": RandomForestRegressor(),
+                "Decision Tree": DecisionTreeRegressor(),
+                "Gradient Boosting": GradientBoostingRegressor(),
+                "Linear Regression": LinearRegression(),
+                "XGBRegressor": XGBRegressor(),
+                "CatBoosting Regressor": CatBoostRegressor(verbose=False),
+                "AdaBoost Regressor": AdaBoostRegressor(),
             }
             params={
                 "Decision Tree": {
